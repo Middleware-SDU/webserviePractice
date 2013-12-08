@@ -19,10 +19,10 @@ import cn.edu.sdu.webservice.ejbcontainer.module.User;
 @Remote(UserService.class)
 
 @WebService(
-    name="UserService"
-    , serviceName="UserService"
-    , portName="UserServicePort"
-    , targetNamespace="http://ejbcontainer.webservice.sdu.edu.cn/"
+    serviceName="UserServiceBean"
+    , portName="UserServiceBeanPort"
+    , endpointInterface="cn.edu.sdu.webservice.ejbcontainer.service.UserService"
+    , targetNamespace="http://jbossws.webservice.sdu.edu.cn/"
 )
 public class UserServiceBean implements UserService {
 
